@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PermaAccces</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3b82f6', // Example primary color
+              secondary: '#6b7280',
+              muted: '#f3f4f6',
+              foreground: '#111827',
+              destructive: '#ef4444',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* This is where you could add more custom styles if needed */
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary">PermaAccces</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-foreground hover:text-primary transition-colors">Women</a>
+                    <a href="#" class="text-foreground hover:text-primary transition-colors">Men</a>
+                    <a href="#" class="text-foreground hover:text-primary transition-colors">Kids</a>
+                    <a href="#" class="text-foreground hover:text-primary transition-colors">Accessories</a>
+                    <a href="#" class="text-foreground hover:text-primary transition-colors">Sale</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden md:block">
+                        <input type="text" placeholder="Search products..." class="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        <svg class="w-5 h-5 text-gray-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <button class="relative p-2 text-foreground hover:text-primary transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </button>
+                    <button class="md:hidden p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative bg-blue-500 text-white">
+        <div class="container mx-auto px-4 py-20">
+            <div class="max-w-2xl">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Summer Collection 2024</h2>
+                <p class="text-xl mb-8">Discover the latest trends in fashion at unbeatable prices</p>
+                <a href="#" class="inline-block bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Shop by Category</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion category Women's Fashion" alt="Women's Fashion category" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Women's Fashion</h3>
+                        <p class="text-gray-600">Trendy outfits for women</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#" class="inline-block w-full text-center bg-transparent border border-blue-500 text-blue-500 py-2 rounded-md hover:bg-blue-500 hover:text-white transition-colors">Explore</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion category Men's Collection" alt="Men's Collection category" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Men's Collection</h3>
+                        <p class="text-gray-600">Stylish clothing for men</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#" class="inline-block w-full text-center bg-transparent border border-blue-500 text-blue-500 py-2 rounded-md hover:bg-blue-500 hover:text-white transition-colors">Explore</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion category Kids' Wear" alt="Kids' Wear category" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Kids' Wear</h3>
+                        <p class="text-gray-600">Comfortable clothes for children</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#" class="inline-block w-full text-center bg-transparent border border-blue-500 text-blue-500 py-2 rounded-md hover:bg-blue-500 hover:text-white transition-colors">Explore</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKHwsLCgwOGxwsQkQpIRwVFCwWFRsvFxSWpzkycVznZ25/" alt="Accessories category" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Accessories</h3>
+                        <p class="text-gray-600">Complete your look</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#" class="inline-block w-full text-center bg-transparent border border-blue-500 text-blue-500 py-2 rounded-md hover:bg-blue-500 hover:text-white transition-colors">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Featured Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion product Casual Summer Dress" alt="Casual Summer Dress" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Casual Summer Dress</h3>
+                        <p class="text-gray-600 text-sm">Women</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-lg font-bold text-blue-500">₹799</span>
+                            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition-colors">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion product Denim Jacket" alt="Denim Jacket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Denim Jacket</h3>
+                        <p class="text-gray-600 text-sm">Men</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-lg font-bold text-blue-500">₹1299</span>
+                            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition-colors">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion product Striped T-Shirt" alt="Striped T-Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Striped T-Shirt</h3>
+                        <p class="text-gray-600 text-sm">Men</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-lg font-bold text-blue-500">₹499</span>
+                            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition-colors">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion product Floral Maxi Dress" alt="Floral Maxi Dress" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Floral Maxi Dress</h3>
+                        <p class="text-gray-600 text-sm">Women</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-lg font-bold text-blue-500">₹899</span>
+                            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition-colors">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion product Kids Jogger Set" alt="Kids Jogger Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Kids Jogger Set</h3>
+                        <p class="text-gray-600 text-sm">Kids</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-lg font-bold text-blue-500">₹699</span>
+                            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition-colors">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion product Designer Handbag" alt="Designer Handbag" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Designer Handbag</h3>
+                        <p class="text-gray-600 text-sm">Accessories</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-lg font-bold text-blue-500">₹999</span>
+                            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition-colors">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion product Sports Shoes" alt="Sports Shoes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Sports Shoes</h3>
+                        <p class="text-gray-600 text-sm">Men</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-lg font-bold text-blue-500">₹1499</span>
+                            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition-colors">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Fashion product Summer Hat" alt="Summer Hat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Summer Hat</h3>
+                        <p class="text-gray-600 text-sm">Accessories</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="text-lg font-bold text-blue-500">₹399</span>
+                            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition-colors">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-blue-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+            <p class="text-lg mb-6">Subscribe to our newsletter for latest updates and offers</p>
+            <div class="max-w-md mx-auto flex gap-2">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/70 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" />
+                <button type="submit" class="bg-gray-200 text-gray-800 px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-200 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-900">PermaAccces</h3>
+                    <p class="text-gray-600">Affordable fashion for everyone</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-900">Shop</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-primary">Women</a></li>
+                        <li><a href="#" class="hover:text-primary">Men</a></li>
+                        <li><a href="#" class="hover:text-primary">Kids</a></li>
+                        <li><a href="#" class="hover:text-primary">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-900">Help</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-primary">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary">Shipping</a></li>
+                        <li><a href="#" class="hover:text-primary">Returns</a></li>
+                        <li><a href="#" class="hover:text-primary">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-900">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-blue-500">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-500">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm5.859 7.75c.006.127.008.255.008.383 0 3.9-2.968 8.396-8.396 8.396a8.35 8.35 0 0 1-4.51-1.32 5.92 5.92 0 0 0 4.367-1.223 2.96 2.96 0 0 1-2.762-2.056 2.97 2.97 0 0 0 1.335-.051 2.96 2.96 0 0 1-2.374-2.903v-.037c.399.222.855.355 1.34.372a2.956 2.956 0 0 1-.916-3.95 8.398 8.398 0 0 0 6.098 3.091 2.96 2.96 0 0 1 5.041-2.699 5.94 5.94 0 0 0 1.88-.718 2.97 2.97 0 0 1-1.3 1.635 5.92 5.92 0 0 0 1.698-.464 5.98 5.98 0 0 1-1.477 1.532z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-500">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm3.7 14.077c-1.75.362-5.453.362-7.203 0-1.896-.391-2.117-1.538-2.246-2.077-.02-.086-.029-.176-.029-.265v-2.97c0-.182.108-.35.27-.431l2.5-1.423c.094-.055.204-.055.298 0l2.5 1.423c.161.081.27.249.27.431v2.97c0 .089-.01.179-.029.265-.056.244-.17.642-1.017.898.26.432.908 1.01 1.746 1.45 1.595.743 3.285.631 3.795.516.227-.051.448-.136.654-.253.289-.163.458-.48.458-.82v-2.97c0-.182-.108-.35-.27-.431l-2.5-1.423c-.094-.055-.204-.055-.298 0l-2.5 1.423c-.161.081-.27.249-.27.431v.673c0 .184.113.35.287.426.725.345 2.237.67 3.283.67 1.046 0 2.558-.325 3.283-.67.174-.076.287-.242.287-.426v-.673c0-.182-.108-.35-.27-.431l-.642-.365c.179-.242.34-.523.475-.836l.367.209c.161.081.27.249.27.431v2.97c0 .34-.169.657-.458.82-.206.117-.427.202-.654.253-.51.115-2.2.227-3.795-.516-.838-.44-1.486-1.018-1.746-1.45-.139-.289-.222-.587-.252-.887.847-.256.961-.654 1.017-.898.02-.086.029-.176.029-.265v-1.62l-1.5-.854v2.474c0 .089.01.179.029.265.129.539.35 1.686 2.246 2.077 1.75.362 5.453.362 7.203 0 1.896-.391 2.117-1.538-2.246-2.077.02-.086-.029-.176-.029-.265v-2.97c0-.089-.01-.179-.029-.265-.129-.539-.35-1.686-2.246-2.077-1.75-.362-5.453-.362-7.203 0-1.896.391-2.117 1.538-2.246 2.077-.02.086-.029-.176-.029-.265v.172l1.5.854v-.798c0-.182.108-.35.27-.431l2.5-1.423c.094-.055.204-.055.298 0l2.5 1.423c.161.081.27.249.27.431v2.97c0 .089-.01.179-.029.265-.129.539-.35 1.686-2.246 2.077z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 mt-8 pt-8 text-center text-gray-600">
+                <p>&copy; 2024 PermaAccces. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
